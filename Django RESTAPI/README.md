@@ -37,3 +37,24 @@ cd my-react-app
 npm install
 npm run dev
 ```
+
+## Clone Project
+```
+py -m venv .venv
+
+.venv\Scripts\activate.bat
+
+python.exe -m pip install --upgrade pip
+
+pip install django
+
+pip install djangorestframework
+
+pip install django-cors-headers
+
+cd mystore
+
+py manage.py migrate
+
+py manage.py runserver 4097
+```

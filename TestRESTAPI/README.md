@@ -43,3 +43,32 @@ npm create vite@latest my-react-app -- --template react-ts
 
 npm i axios
 ```
+
+## Clone Project
+```
+py -m venv .venv
+
+.venv\Scripts\activate.bat
+
+python.exe -m pip install --upgrade pip
+
+pip install django
+
+pip install djangorestframework
+
+pip install django-cors-headers
+
+python -m pip install Pillow
+
+cd mystore
+
+py manage.py migrate
+
+py manage.py runserver 4097
+```
+
+## Login By Google
+```
+python manage.py makemigrations
+py manage.py migrate
+```
