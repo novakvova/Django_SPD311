@@ -71,4 +71,6 @@ py manage.py runserver 4097
 ```
 python manage.py makemigrations
 py manage.py migrate
+
+pip install requests
 ```

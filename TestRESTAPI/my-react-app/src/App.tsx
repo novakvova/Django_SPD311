@@ -4,6 +4,7 @@
 import axios from 'axios'
 import './App.css'
 import { useEffect } from 'react'
+import {useGoogleLogin} from "@react-oauth/google";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,9 +19,18 @@ function App() {
       })
   }, [])
 
+  const loginByGoogle = useGoogleLogin({
+    onSuccess: tokenResponse => {
+      // console.log("Google Responce", tokenResponse)
+      console.log("access_token", tokenResponse.access_token)
+    },
+  });
+
   return (
     <>
       <h1>Hello World</h1>
+
+      <button onClick={() => loginByGoogle()}>Sign in with Google 🚀</button>
     </>
   )
 }
